@@ -59,7 +59,7 @@ html.active {
 }
 
 [class$="__container"] {
-	max-width: 87.5rem;
+	max-width: 86.25rem;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 0.625rem;

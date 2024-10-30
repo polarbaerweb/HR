@@ -69,13 +69,31 @@
 .triangle--white {
 	width: 0;
 	height: 0;
-	border-right: 0.75rem solid transparent;
 	border-left: 1rem solid transparent;
+	border-right: 1rem solid transparent;
 	border-bottom: 0.75rem solid var(--milky-white);
+}
+
+.circle--white {
+	width: 1.25rem;
+	height: 1.25rem;
+	background-color: var(--milky-white);
+	border-radius: 50%;
+}
+
+.square--white {
+	width: 1.25rem;
+	height: 1.25rem;
+	background-color: var(--milky-white);
 }
 
 .triangle--light-teal {
 	border-bottom: 0.75rem solid var(--light-teal);
+}
+
+.circle--light-teal,
+.square--light-teal {
+	background-color: var(--light-teal);
 }
 
 .triangle--blue {
@@ -94,6 +112,12 @@
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
+}
+
+.figure-box {
+	display: flex;
+	align-items: center;
+	gap: 0.625rem;
 }
 
 .main__external-link {
