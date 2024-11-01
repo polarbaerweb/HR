@@ -23,10 +23,13 @@ const blogs = new Swiper(".main__blogs-swiper", {
 				nextEl: null,
 				prevEl: null,
 			},
+
+			slidesPerGroup: 1,
 		},
 
 		768: {
 			slidesPerView: 2,
+			slidesPerGroup: 2,
 		},
 
 		992: {
