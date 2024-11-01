@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 				resultsItems.forEach((item) => {
 					const body = item.querySelector(".main__results-body");
+
 					if (item.contains(event.target)) {
 						body.classList.toggle("_active");
 					} else {

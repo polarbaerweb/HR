@@ -65,6 +65,10 @@ html.active {
 	padding: 0 0.625rem;
 }
 
+svg {
+	background-color: transparent; /* Ensures the background is transparent */
+}
+
 ._ibg {
 	position: relative;
 }
