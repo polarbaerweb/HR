@@ -545,21 +545,6 @@
 .main__title-description-paragraph {
 }
 
-.main__section-sub-header {
-	margin-top: 1.25rem;
-	position: relative;
-}
-
-.main__section-sub-header .triangle--white,
-.main__section-sub-header .circle--white,
-.main__section-sub-header .square--white {
-	position: absolute;
-	top: 50%;
-	right: 1.875rem;
-	transform: translate(0, -50%);
-	z-index: 2;
-}
-
 .main__section-title--background {
 }
 
@@ -811,5 +796,12 @@ label[for="file-upload"] img {
 
 	.main__form-block-inner label[for="file-upload"] {
 		justify-content: space-between;
+	}
+}
+
+/* Main Map */
+@media (max-width: 768px) {
+	.main__map iframe {
+		height: 25rem;
 	}
 }

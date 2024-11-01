@@ -151,7 +151,7 @@
 		gap: 0.5rem;
 		flex-wrap: nowrap;
 		overflow-y: auto;
-		max-height: 80%;
+		max-height: 50%;
 		height: 100%;
 		padding: 0;
 	}
