@@ -897,6 +897,7 @@ label[for="file-upload"] img {
 	visibility: hidden;
 	max-width: 62.5rem;
 	width: 100%;
+	padding: 1.25rem;
 }
 
 .main__faq-text._active {
