@@ -805,3 +805,135 @@ label[for="file-upload"] img {
 		height: 25rem;
 	}
 }
+
+/* Main Faq */
+.main__faq .main__container {
+	display: flex;
+	align-items: flex-start;
+	gap: 1.25rem;
+}
+
+.main__faq-left {
+	flex: 0 1 auto;
+	max-width: 20%;
+	width: 100%;
+	/* min-height: 46.875rem; */
+}
+
+.main__faq-left .main__section-header {
+	margin-bottom: 1.25rem;
+}
+
+.main__faq-image-wrapper {
+	min-height: 33.125rem;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	border-radius: 1.25rem;
+}
+
+.main__faq-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+	transition: all 0.3s ease;
+	object-fit: cover;
+}
+
+@media (hover: hover) {
+	.main__faq-image:hover {
+		transform: scale(1.04);
+	}
+}
+
+.main__faq-right {
+	flex: 0 1 auto;
+	max-width: 80%;
+	width: 100%;
+}
+
+.main__faq-list {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 1.25rem;
+}
+.main__faq-item {
+	width: 100%;
+	min-height: 5.625rem;
+	border-radius: 1.25rem;
+	background-color: var(--gainsboro-blue);
+	padding: 1.25rem;
+	position: relative;
+	transition: all 0.4s ease;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.main__faq-title {
+	color: var(--dark-blue);
+	font-size: 1.125rem;
+	line-height: 150%;
+	text-transform: uppercase;
+}
+.main__faq-button {
+	width: 3.125rem;
+	height: 3.125rem;
+	border-radius: 0.625rem;
+	background-color: var(--dark-blue);
+	cursor: pointer;
+}
+.main__faq-text {
+	position: absolute;
+	top: calc(100% + 0.625rem);
+	left: 50%;
+	transform: translate(-50%, -1.25rem);
+	transition: all 0.4s ease;
+	opacity: 0;
+	visibility: hidden;
+	max-width: 62.5rem;
+	width: 100%;
+}
+
+.main__faq-text._active {
+	opacity: 1;
+	visibility: visible;
+	transform: translate(-50%, 0);
+}
+
+.main__faq-paragraph {
+}
+
+@media (max-width: 768px) {
+	.main__faq .main__container {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+
+	.main__faq-left,
+	.main__faq-right {
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.main__faq-left {
+		display: flex;
+		align-items: flex-start;
+		gap: 0.625rem;
+	}
+
+	.main__faq-image-wrapper {
+		min-height: 7.5rem;
+	}
+}
+
+@media (max-width: 320px) {
+	.main__faq-button {
+		flex: 1 0 auto;
+	}
+}

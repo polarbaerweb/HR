@@ -121,6 +121,42 @@
 	height: 3.125rem;
 }
 
+.main__faq-button {
+	position: relative;
+}
+
+.main__faq-button::before,
+.main__faq-button::after {
+	content: "";
+	position: absolute;
+	background-color: var(--white-smoke); /* Color of the plus symbol */
+	transition: all 0.4s ease;
+}
+
+.main__faq-button::before {
+	width: 0.125rem; /* Width of vertical line */
+	height: 70%; /* Height of vertical line */
+	top: 50%; /* Center vertically */
+	left: 50%; /* Center horizontally */
+	transform: translate(-50%, -50%); /* Center using transform */
+}
+
+.main__faq-button._active::before {
+	transform: translate(-50%, -50%) rotate(45deg); /* Center using transform */
+}
+
+.main__faq-button::after {
+	height: 0.125rem; /* Height of horizontal line */
+	width: 70%; /* Width of horizontal line */
+	top: 50%; /* Center vertically */
+	left: 50%; /* Center horizontally */
+	transform: translate(-50%, -50%); /* Center using transform */
+}
+
+.main__faq-button._active::after {
+	transform: translate(-50%, -50%) rotate(45deg); /* Center using transform */
+}
+
 .main__section-sub-header {
 	margin-top: 1.25rem;
 	position: relative;
@@ -205,15 +241,17 @@
 	grid-template-columns: repeat(3, 1fr);
 	grid-auto-rows: 1fr;
 	gap: 1.25rem;
+	transition: all 0.4s ease;
 }
+
 .main__results-item {
 	width: 100%;
 	min-height: 18.3125rem;
 	position: relative;
+	transition: all 0.4s ease;
 }
 
-.main__results-item:last-child {
-	grid-column: span 2;
+.main__results-item.span-full {
 	border-radius: 1.25rem;
 	overflow: hidden;
 }
