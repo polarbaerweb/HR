@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		results: {
 			parent: ".main__results-item",
 			child: ".main__results-body",
-			button: ".main__faq-button",
+			button: ".button__box",
 		},
 		faq: {
 			parent: ".main__faq-item",
