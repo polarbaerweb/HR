@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				}
 			});
 		},
-		{ threshold: 0.8 },
+		{ threshold: 0.3 },
 	);
 
 	const elements = document.querySelectorAll(".scroll-animated");
