@@ -42,7 +42,7 @@
 }
 
 .burger.active::before {
-	rotate: 320deg;
+	rotate: -45deg;
 	position: relative;
 	top: 0.3rem;
 }
