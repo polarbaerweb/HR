@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				".main__results-body, .main__faq-text",
 			);
 
-			const allButtons = [".main__faq-button"];
+			const allButtons = [".main__faq-button", ".button__box"];
 
 			allBodies.forEach((body) => {
 				body.classList.remove("_active");

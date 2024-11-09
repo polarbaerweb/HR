@@ -133,8 +133,8 @@
 	left: 50%;
 	z-index: 2;
 	display: block;
-	width: 50%;
-	height: 50%;
+	width: 1.5625rem;
+	height: 1.5625rem;
 	border-top: 0.125rem solid var(--dark-blue);
 	border-left: 0.125rem solid var(--dark-blue);
 	transform: translate(-50%, 20%) rotate(225deg);
@@ -274,6 +274,10 @@
 	min-height: 18.3125rem;
 	position: relative;
 	transition: all 0.4s ease;
+}
+
+.main__results-item:not(:last-child) {
+	/* max-width: 27.1875rem; */
 }
 
 .main__results-item.span-full {
@@ -441,7 +445,6 @@
 	}
 
 	.main__results-header-left {
-		padding: 0.625rem;
 	}
 
 	.main__results-body {
@@ -456,8 +459,8 @@
 	.main__results-body._active {
 		visibility: visible;
 		opacity: 1;
-		transform: translateY(0);
 		position: relative;
+		transform: translate(0, 0);
 	}
 
 	.main__results-item._active {
